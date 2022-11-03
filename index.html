@@ -14,15 +14,20 @@
       src="https://kit.fontawesome.com/2671fb1980.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" href="./assests/logo.2c489fc453a1783cbadacf914efa3df6.svg">
+    <link
+      rel="icon"
+      href="./assests/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+    />
+    <script src="./index.js"></script>
   </head>
   <body>
     <div id="main">
       <section id="nav">
         <div class="nav__container">
-          <div class="nav__row">
+          <div class="DesktopNavLinks">
             <a href="#" class="nav__logo--link"
-              ><img class="nav__img"
+              ><img
+                class="nav__img"
                 src="./assests/logo.2c489fc453a1783cbadacf914efa3df6.svg"
                 alt=""
               />Treact</a
@@ -38,39 +43,78 @@
               </li>
             </ul>
           </div>
+          <div class="MobileNavLinks__container">
+            <a href="#" class="nav__logo--link"
+              ><img
+                class="nav__img"
+                src="./assests/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+                alt=""
+              />Treact</a
+            >
+            <button class="btn__menu" onclick="openMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="MobileNavLinks__styled">
+              <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+              </button>
+              <div class="MobileNavLinks">
+                <a href="#" class="MobileNavLink" onclick="closeMenu()"
+                  >About</a
+                >
+                <a href="#" class="MobileNavLink" onclick="closeMenu()">Blog</a>
+                <a href="#" class="MobileNavLink" onclick="closeMenu()"
+                  >Pricing</a
+                >
+                <a href="#" class="MobileNavLink" onclick="closeMenu()"
+                  >Contact Us</a
+                >
+                <a
+                  href="#"
+                  class="MobileNavLink StyledNavLink"
+                  onclick="closeMenu()"
+                  >Login</a
+                >
+                <a
+                  href="#"
+                  class="MobileNavLink StyledNavLinkPrimary"
+                  onclick="closeMenu()"
+                  >Sign Up</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="input">
         <div class="input__container">
-          <div class="input__row">
-            <div class="left__column">
-              <h1>
-                Beautiful React Templates <span class="purple">for you.</span>
-              </h1>
-              <p class="input__column--para">
-                Our templates are easy to setup, understand and customize. Fully
-                modular components with a variety of pages and components.
-              </p>
-              <div class="input__bar">
-                <input type="text" placeholder="Your Email Address" />
-                <button class="gs__button">Get Started</button>
-              </div>
-              <div class="input__column--info">
-                <p class="input__column--text">OUR TRUSTED CUSTOMERS</p>
-                <img
-                  class="input__img"
-                  src="./assests/customers-logo-strip.680ac7c2e8ae28161d2c.png"
-                  alt=""
-                />
-              </div>
+          <div class="left__column">
+            <h1>
+              Beautiful React Templates <span class="purple">for you.</span>
+            </h1>
+            <p class="input__column--para">
+              Our templates are easy to setup, understand and customize. Fully
+              modular components with a variety of pages and components.
+            </p>
+            <div class="input__bar">
+              <input type="text" placeholder="Your Email Address" />
+              <button class="gs__button">Get Started</button>
             </div>
-            <div class="right__column">
+            <div class="input__column--info">
+              <p class="input__column--text">OUR TRUSTED CUSTOMERS</p>
               <img
-                class="input__img--right"
-                src="./assests/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+                class="input__img"
+                src="./assests/customers-logo-strip.680ac7c2e8ae28161d2c.png"
                 alt=""
               />
             </div>
+          </div>
+          <div class="right__column">
+            <img
+              class="input__img--right"
+              src="./assests/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+              alt=""
+            />
           </div>
         </div>
       </section>
