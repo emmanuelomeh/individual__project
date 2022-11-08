@@ -42,7 +42,7 @@
             </li>
           </ul>
         </div>
-        <div class="MobileNavLinks__container">
+        <div class="MobileNavLinks">
           <a href="#" class="nav__logo--link"
             ><img
               class="nav__img"
@@ -53,32 +53,46 @@
           <button class="btn__menu" onclick="openMenu()">
             <i class="fa-solid fa-bars"></i>
           </button>
-          <div class="MobileNavLinks__styled">
+          <div class="MobileNavLinks__backdrop">
             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
               <i class="fas fa-times"></i>
             </button>
-            <div class="MobileNavLinks">
-              <a href="#" class="MobileNavLink" onclick="closeMenu()">About</a>
-              <a href="#" class="MobileNavLink" onclick="closeMenu()">Blog</a>
-              <a href="#" class="MobileNavLink" onclick="closeMenu()"
-                >Pricing</a
-              >
-              <a href="#" class="MobileNavLink" onclick="closeMenu()"
-                >Contact Us</a
-              >
-              <a
-                href="#"
-                class="MobileNavLink StyledNavLink"
-                onclick="closeMenu()"
-                >Login</a
-              >
-              <a
-                href="#"
-                class="MobileNavLink StyledNavLinkPrimary"
-                onclick="closeMenu()"
-                >Sign Up</a
-              >
-            </div>
+            <ul class="MobileNavLinks__Links">
+              <li class="MobileNavList">
+                <a href="#" class="MobileNavLink" onclick="closeMenu()"
+                  >About</a
+                >
+              </li>
+              <li class="MobileNavList">
+                <a href="#" class="MobileNavLink" onclick="closeMenu()">Blog</a>
+              </li>
+              <li class="MobileNavList">
+                <a href="#" class="MobileNavLink" onclick="closeMenu()"
+                  >Pricing</a
+                >
+              </li>
+              <li class="MobileNavList">
+                <a href="#" class="MobileNavLink" onclick="closeMenu()"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="MobileNavList">
+                <a
+                  href="#"
+                  class="MobileNavLink StyledNavLink"
+                  onclick="closeMenu()"
+                  >Login</a
+                >
+              </li>
+              <li class="MobileNavList">
+                <a
+                  href="#"
+                  class="MobileNavLink StyledNavLinkPrimary"
+                  onclick="closeMenu()"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </div>

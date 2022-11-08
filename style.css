@@ -7,7 +7,6 @@
 
 body {
   padding: 32px;
-  overflow-x: hidden;
 }
 
 html {
@@ -46,6 +45,8 @@ li {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .DesktopNavLinks {
@@ -54,17 +55,19 @@ li {
   align-items: center;
 }
 
+.MobileNavLinks {
+  display: none;
+}
+
 .btn__menu {
   background-color: transparent;
   font-size: 25px;
   text-align: center;
   border: none;
   color: #243e63;
-  display: none;
-  overflow-x: hidden;
 }
 
-.MobileNavLinks__styled {
+.MobileNavLinks__backdrop {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,24 +82,24 @@ li {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
-  transform: translate(100%);
+  transform: translate(-100%);
   transition: all 300ms ease;
 }
 
-.MobileNavLinks {
+.MobileNavLinks__Links {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
-.MobileNavLink {
+.MobileNavList {
   padding: 16px 0;
 }
 
 .StyledNavLink {
-  padding: 16px 0 32px 0;
+  margin: 0 0 32px 0;
 }
 
 .StyledNavLinkPrimary {
@@ -114,7 +117,7 @@ li {
   overflow-y: hidden;
 }
 
-.menu--open .MobileNavLinks__styled {
+.menu--open .MobileNavLinks__backdrop {
   visibility: visible;
   opacity: 1;
   transform: translate(0);
@@ -1117,12 +1120,6 @@ h2 {
 
 /* FOOTER */
 
-footer {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
 .FiveColumn__container {
   position: relative;
   margin-left: -2rem;
@@ -1263,7 +1260,7 @@ footer {
     display: none;
   }
 
-  .MobileNavLinks__container {
+  .MobileNavLinks {
     display: flex;
     justify-content: space-between;
   }
@@ -1309,7 +1306,8 @@ footer {
     width: 100%;
   }
 
-  .left__column, .right__column {
+  .left__column,
+  .right__column {
     display: flex;
     align-items: center;
     width: 100%;
